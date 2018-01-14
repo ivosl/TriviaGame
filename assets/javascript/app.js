@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     function initialScreen() {
-        startScreen = "<p class='text-center main-button-container'><a class='btn btn-primary btn-lg btn-block start-button' href='#' role='button'>Start Game</a></p>";
+        startScreen = "<p class='text-center main-button-container'><a class='btn btn-primary btn-lg btn-block start-button' href='#' role='button'>Start Game</a></p>" + "<img class='center-block img-start'width = '200' src='https://media.giphy.com/media/l3UcqjMBeQzXaoqGI/giphy.gif'>";
         $(".mainArea").html(startScreen);
     }
     initialScreen();
@@ -31,7 +31,7 @@ $(document).ready(function() {
     
     function generateLossDueToTimeOut() {
         unansweredTally++;
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer is: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='https://media.giphy.com/media/3ornjXizVZDbngmjRK/giphy-downsized.gif'>";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer is: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong'width = '370' src='https://media.giphy.com/media/3ornjXizVZDbngmjRK/giphy-downsized.gif'>";
       
         letsWait();  
         function letsWait() {
@@ -53,7 +53,7 @@ $(document).ready(function() {
     
     function generateLoss() {
         incorrectTally++;
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='https://media.giphy.com/media/3o7btT1T9qpQZWhNlK/giphy-downsized.gif'>";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong'width = '370' src='https://media.giphy.com/media/3o7btT1T9qpQZWhNlK/giphy-downsized.gif'>";
 
         letsWait(); 
         function letsWait() {
@@ -113,7 +113,7 @@ $(document).ready(function() {
 
     var questionArray = ["What is the smallest country in the world?", "Which is the biggest city in the world?", "Which was the happiest country in the world in 2017?", "What is the highest mountain on Earth?", "What is the capital of China?", "What is the longest river in the United States?", "What is the capital of Colombia?", "What is the The world’s saltiest body of water?"];
     var answerArray = [["Andorra", "Vatican", "Monaco", "Malta"], ["Tokio", "San Paolo", "New York","Moscow"], ["Denmark", "USA", "India", "Norway"], ["Lhotse", "K2", "Mount Everest", "Makalu"], ["Hong Kong", "Macau", "Shanghai", "Beijing"], ["Missouri River", "Mississippi River", "Yukon River", "Rio Grande"], ["Medellin", "Bogota", "Cartagena", "Cali"], ["Dead Sea", "Great Salt Lake","Lake Baikal","Don Juan"]];
-    var imageArray = ["<img class='center-block img-right' src='https://media.giphy.com/media/4LwE9QnEakfcs/giphy.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/K4ofgLuTbQ8Uw/giphy-downsized.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/11sBLVxNs7v6WA/giphy-downsized.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/grxBXF3i3NyjS/giphy.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/3o6nUQlg4TSA9Hi7ss/giphy-downsized.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/vBzDAe90oDE3u/giphy-tumblr.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/kiUVzHKCx0amQ/giphy-downsized.gif'>", "<img class='center-block img-right' src='https://media.giphy.com/media/NT3YYTxuyxQWc/giphy-downsized.gif'>"];
+    var imageArray = ["<img class='center-block img-right' width = '370' src='https://media.giphy.com/media/4LwE9QnEakfcs/giphy.gif'>", "<img class='center-block img-right' width = '370' src='https://media.giphy.com/media/K4ofgLuTbQ8Uw/giphy-downsized.gif'>", "<img class='center-block img-right' width = '370' src='https://media.giphy.com/media/11sBLVxNs7v6WA/giphy-downsized.gif'>", "<img class='center-block img-right' width = '370' src='https://media.giphy.com/media/grxBXF3i3NyjS/giphy.gif'>", "<img class='center-block img-right'width = '370' src='https://media.giphy.com/media/3o6nUQlg4TSA9Hi7ss/giphy-downsized.gif'>", "<img class='center-block img-right'width = '370' src='https://media.giphy.com/media/vBzDAe90oDE3u/giphy-tumblr.gif'>", "<img class='center-block img-right'width = '370' src='https://media.giphy.com/media/kiUVzHKCx0amQ/giphy-downsized.gif'>", "<img class='center-block img-right'width = '370' height = '450' src='https://media.giphy.com/media/NT3YYTxuyxQWc/giphy-downsized.gif'>"];
 
     var correctAnswers = ["B. Vatican", "A. Tokio", "D. Norway", "C. Mount Everest", "D. Beijing", "A. Missouri River", "B. Bogota", "D. Don Juan"];
     var questionCounter = 0;
